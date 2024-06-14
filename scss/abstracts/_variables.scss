@@ -1,0 +1,23 @@
+:root {
+    // MAIN COLORS
+    --color-primary-dark: #002C13;
+    --color-primary: #00923F;
+    --color-primary-light: #0AFF74;
+    --color-secondary: #E0211F;
+
+    //TEXT
+    --color-light: #f2f2f2;
+    --color-dark: #3c3c3c;
+    --color-medium: #a5a5a5;
+    --color-heading-sub: #858585;
+
+    // DEFUALT TEXT SIZE
+    --default-font-size: 1.6rem;
+
+    //BORDER
+    --section-separator: 1px solid #e1e1e1;
+}
+
+// Colors for linear gradients
+$color-gradient-start: #00923F;
+$color-gradient-end: #293f50;

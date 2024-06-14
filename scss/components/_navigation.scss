@@ -1,0 +1,20 @@
+.navigation {
+    list-style-type: none;
+    font-family: 'Poppins';
+    font-size: var(--default-font-size);
+    font-weight: 500;
+    
+    display: flex;
+    margin-right: auto;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 2.25rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-light);
+    }
+}
