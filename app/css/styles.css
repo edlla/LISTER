@@ -127,7 +127,10 @@ body {
 .section-title {
   font-size: 3.25rem;
   font-weight: 500;
-  letter-spacing: 0;
+}
+.section-title--sub {
+  font-size: 2.8rem;
+  font-weight: 300;
 }
 
 .sub-title {
@@ -137,6 +140,10 @@ body {
 
 .u-center {
   text-align: center;
+}
+
+.u-margin-bottom-std {
+  margin-bottom: 2.5rem;
 }
 
 .u-margin-bottom-xs {
@@ -157,14 +164,14 @@ body {
 
 .btn {
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   cursor: pointer;
 }
 .btn--thick {
-  padding: 1.3rem 1.8rem;
+  padding: 1.3rem 2.3rem;
 }
 .btn--narrow {
-  padding: 1.1rem 1.8rem;
+  padding: 1.1rem 2rem;
   display: flex;
   align-items: center;
 }
@@ -183,12 +190,19 @@ body {
 }
 .btn--empty {
   background-color: transparent;
-  border: 1px solid var(--color-primary-dark);
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: all 0.2s;
+}
+.btn--empty:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 .btn--full {
-  background-color: var(--color-primary-dark);
-  border: 1px solid var(--color-primary-dark);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   color: var(--color-light);
 }
 .btn--rounded {
@@ -274,7 +288,7 @@ body {
 .team,
 .blog,
 .faq,
-.contact-info,
+.contact,
 .footer {
   grid-column: center-start/center-end;
 }
@@ -350,6 +364,7 @@ body {
 .discover .services figcaption {
   font-family: "Poppins";
   font-weight: 700;
+  color: var(--color-primary);
   font-size: 1.8rem;
 }
 .discover .services__desc {
@@ -358,7 +373,7 @@ body {
 .discover .services__link {
   font-size: 1.4rem;
   text-decoration: none;
-  color: var(--color-dark);
+  color: var(--color-primary);
 }
 .discover .services__link .symbol {
   margin-left: 0.8rem;
@@ -473,6 +488,7 @@ body {
 }
 .stories .stats-details .heading {
   font-size: 3.5rem;
+  color: var(--color-primary);
 }
 .stories .stats-details .summary {
   font-size: 1.4rem;
@@ -499,7 +515,7 @@ body {
 .testimonials .ratings__star {
   width: 1.8rem;
   height: 1.8rem;
-  fill: var(--color-dark);
+  fill: var(--color-primary);
   display: inline-block;
 }
 .testimonials .ratings__star:not(:last-of-type) {
@@ -547,9 +563,62 @@ body {
   width: 1.3rem;
   height: 1.3rem;
   display: inline-block;
+  fill: var(--color-primary);
 }
 .team .bio__icon:not(:last-child) {
   margin-right: 0.8rem;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.blog {
+  padding: 9rem 0;
+  border-bottom: var(--section-separator);
+}
+
+.faq {
+  padding: 9rem 0;
+  border-bottom: var(--section-separator);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+
+.contact {
+  padding: 9rem 0;
+  border-bottom: var(--section-separator);
+}
+.contact__info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+.contact__details, .contact__map {
+  padding: 2.5rem 0;
+}
+
+.footer {
+  padding: 1.3rem 0 9rem;
+  display: flex;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin-right: auto;
+}
+.footer__icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-block;
+}
+.footer__icon:not(:last-child) {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
